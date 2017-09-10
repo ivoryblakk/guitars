@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="style.css">
+  <title> Guitars</title>
+  <head>   
+<style>
+    p {
+    color: red;
+    font-size: 20px;
+  }
+.font {
+    font-size: 40px;
+    font-family: Monospace;
+  }
+.guitar-picture-size {
+    width: 200px;
+    background: green;
+    border: 2px dashed blue
+  }
+  h1 {
+    background: blue;
+    color: yellow;
+  }
 
- <head>
+</style>
+</head>
     
- 
-  <body>
-    <h1 class = "font">My Guitars</h1>
-    
-    <img class= "guitar-picture-size" src="http://www.ibanez.com/products/images/eg2017//series_u/12_0.png" alt="Iceman guitar"> 
   
-  <!-- <button id = "displayGuitarsButton"> Display Guitars</button>
-  <button id = "toggleAllButton"> Toggle All </button>
-  -->
-
+  <body>
+    <h1 class = "font" style >My Guitars</h1>
+  <table border ="10">
+    <td>
+      <img class= "guitar-picture-size" src="http://www.ibanez.com/products/images/eg2017//series_u/12_0.png" alt="Iceman guitar"> 
+      <img class= "guitar-picture-size" src="http://www.fmicassets.com/Damroot/ZoomJpg/10002/0112702706_gtr_frt_001_rr.jpg" alt="Strat guitar" >
+       <img class= "guitar-picture-size" src="https://media.sweetwater.com/store/manufacturer/Gibson/about/sg_full.jpg" alt="Gibson guitar">    
+    </td>  
+  </table>
   <div>
     <button onclick = "handlers.toggleAll()" id="toggleAll"> Toggle All </button>
   </div>
   
   <div>
     <button onclick ="handlers.addGuitars()"> Add</button>
-    <input id="addGuitarsTextInput" type ="text"> 
+    <input id="addGuitarsTextInput" type ="text" placeholder="Fender"> 
   </div>
   
   <div>
     <button onclick ="handlers.changeGuitars()"> Change Guitars</button>
-     <input id="changeGuitarsPositionInput" type ="number">
-     <input id="changeGuitarsTextInput" type ="text">
+     <input id="changeGuitarsPositionInput" type ="number" placeholder="position">
+     <input id="changeGuitarsTextInput" type ="text" placeholder="Guitar Brand">
   </div>
     
   <div>
   <button onclick ="handlers.deleteGuitars()"> Delete Guitar</button>
-     <input id="deleteGuitarsPositionInput" type ="number">
+     <input id="deleteGuitarsPositionInput" type ="number" placeholder="0">
   </div>
     
   <div>  
   <button onclick ="handlers.toggleGuitars()"> Toggle Guitar</button>
-     <input id="toggleGuitarsPositionInput" type ="number">
+     <input id="toggleGuitarsPositionInput" type ="number" placeholder="0">
     </div>
 
   <p> I made this code for Elium code camp</p>
-    
-<ul>
+<table border ="5">
   
-
-</ul>
-    
+        
+<td>
+  <ul>
+  </ul>
+</td>
+ </table>
    <script src="/client.js"></script>
   </body>
 

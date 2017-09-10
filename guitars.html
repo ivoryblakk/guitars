@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-*
-*
-*
-</head>
-<body>
-*
-*
-*
-</body>
+<link rel="stylesheet" href="style.css">
+
+ <head>
+    
+ 
+  <body>
+    <h1 class = "font">My Guitars</h1>
+    
+    <img class= "guitar-picture-size" src="http://www.ibanez.com/products/images/eg2017//series_u/12_0.png" alt="Iceman guitar"> 
+  
+  <!-- <button id = "displayGuitarsButton"> Display Guitars</button>
+  <button id = "toggleAllButton"> Toggle All </button>
+  -->
+
+  <div>
+    <button onclick = "handlers.toggleAll()" id="toggleAll"> Toggle All </button>
+  </div>
+  
+  <div>
+    <button onclick ="handlers.addGuitars()"> Add</button>
+    <input id="addGuitarsTextInput" type ="text"> 
+  </div>
+  
+  <div>
+    <button onclick ="handlers.changeGuitars()"> Change Guitars</button>
+     <input id="changeGuitarsPositionInput" type ="number">
+     <input id="changeGuitarsTextInput" type ="text">
+  </div>
+    
+  <div>
+  <button onclick ="handlers.deleteGuitars()"> Delete Guitar</button>
+     <input id="deleteGuitarsPositionInput" type ="number">
+  </div>
+    
+  <div>  
+  <button onclick ="handlers.toggleGuitars()"> Toggle Guitar</button>
+     <input id="toggleGuitarsPositionInput" type ="number">
+    </div>
+
+  <p> I made this code for Elium code camp</p>
+    
+<ul>
+  
+
+</ul>
+    
+   <script src="/client.js"></script>
+  </body>
+
+  
+  
+
 </html>
-
-
